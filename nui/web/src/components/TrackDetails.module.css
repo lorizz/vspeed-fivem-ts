@@ -1,0 +1,84 @@
+.base {
+  left: 120px;
+  bottom: 120px;
+  animation: opacity 6s linear forwards;
+}
+
+.start {
+  position: absolute;
+}
+
+.content {
+  position: relative;
+  left: 150px;
+  transform-origin: left;
+  animation: contentStretch 6s linear forwards;
+}
+
+.end {
+  position: relative;
+  left: 90px;
+  animation: endMove 6s linear forwards;
+}
+
+.textContent {
+  width: 400px;
+  position: absolute;
+  top: 10px;
+  left: 220px;
+}
+
+.textContent h2 {
+  color: white;
+  font-weight: 800;
+}
+
+.textContent h5 {
+  color: rgb(225, 213, 184);
+  font-weight: 800;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes contentStretch {
+  0% {
+    transform: scaleX(0);
+  }
+  5% {
+    transform: scaleX(6);
+  }
+  95% {
+    transform: scaleX(6);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes endMove {
+  0% {
+    transform: translateX(0);
+  }
+  5% {
+    transform: translateX(370px);
+  }
+  95% {
+    transform: translateX(370px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

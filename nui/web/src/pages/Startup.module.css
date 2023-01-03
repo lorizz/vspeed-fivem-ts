@@ -1,0 +1,49 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: url("../assets/images/loading/startup.jpg") center no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+
+.content {
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.firstAnim {
+  animation: firstAnim 0.2s steps(1);
+}
+
+.secondAnim {
+  animation: secondAnim 1s linear infinite;
+  animation-delay: 0.2s;
+}
+
+@keyframes firstAnim {
+  0% {
+    transform: translate(-200px, -100px) rotate(-36deg) scale(2);
+  }
+  25% {
+    transform: translate(200px, -130px) rotate(64deg) scale(1.3);
+  }
+  50% {
+    transform: translate(40px, -20px) rotate(13deg) scale(1);
+  }
+  75% {
+    transform: translate(-200px, -100px) rotate(-36deg) scale(2);
+  }
+}
+
+@keyframes secondAnim {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

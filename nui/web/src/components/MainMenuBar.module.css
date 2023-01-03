@@ -1,0 +1,27 @@
+.content {
+  mask-image: linear-gradient(
+    transparent,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+}
+
+.icon {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+}

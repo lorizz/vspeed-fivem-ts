@@ -1,0 +1,14 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: url(../assets/images/menu/background.png) no-repeat center;
+  background-size: cover;
+  position: fixed;
+}
+
+.barWrapper {
+  position: absolute;
+  width: 800px;
+  bottom: 20px;
+  right: 300px;
+}

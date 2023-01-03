@@ -1,0 +1,28 @@
+.loading {
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: black;
+  position: fixed;
+  overflow: hidden;
+}
+
+.loading p {
+  font-size: 42px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+
+.animate {
+  animation: animate 0.2s linear;
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
